@@ -1,0 +1,14 @@
+.rightbox{
+    background-color:DodgerBlue;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+.article {
+    float: left;
+    padding: 20px;
+    width: 100px;
+    background-color: gainsboro;
+    height: 150px;
+}
