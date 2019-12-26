@@ -18,8 +18,9 @@
     under the License.
 -->
 <html>
-    <head>
-        <!--
+
+<head>
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -28,22 +29,46 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <meta name="msapplication-tap-highlight" content="no"> -->
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/angular2.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <title>Hello World</title>
+</head>
+
+<body onload="onLoad()">
+    <div ng-app="app">
+        <div class="form-container" ng-class="done">
+            <div class="login-form">
+                <h3>Welcome table system</h3>
+                <div>
+                    <input type="email" placeholder="E-mail" id="user" value="">
+                </div>
+                <div>
+                    <input type="password" placeholder="password" id="passwd" value="">
+                </div>
+                <button class="data-loading-btn" onclick="login();">
+                    <span data-loaded-msg="Thank YOU!">Login</span>
+                </button>
+            </div>
+            <div class="thank-msg">
+                <h3>you are logged in!!</h3>
+                <button ng-click="done=''">Try again~</button>
+            </div>
+            <div class="credits" style="font-style: 1.2em;">
+                還沒有帳號?? 點此處 <a href="#" onclick="window.open('register.html');">註冊</a>
+                <button type="button" onclick="javascript:location.href='customer.html'">註冊</button>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+    </div>
+    <!-- <script>app.initialize();</script> -->
+    <!-- <script type="text/javascript" scr="cordova.js"></script>
+            <script type="text/javascript" scr="js/index.js"></script> -->
+</body>
+
 </html>
