@@ -55,5 +55,16 @@ function login(){
     });
 }
 function signin(){
-    
+    var id = document.createElement("user").value;
+    var passwd=document.createElement("passwd").value;
+    $.ajax({
+datatype:"JSON",
+type:"POST",
+url:"https://210.70.80.21/~s107021154/signin.php",
+data :"userName=" +id+ "&userPassword="+passwd ,
+crossDomain: true,
+cache:false,
+
+
+    })
 }
