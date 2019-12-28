@@ -33,3 +33,29 @@
 .center{
     padding: 100px
 }
+body{
+    background-color: gray;
+}
+.table{
+padding: 50px;
+margin: 5px;
+width: 100%;
+background-color: greenyellow ;
+flex-wrap: wrap
+}
+.table1{
+    padding:50px;
+    margin: 5px;
+    height: 1000px;
+    width: 200px;
+    background-color: brown;
+}
+.table2{
+   padding:50px;
+   margin: 5px;
+   height:1000px;
+   width: 200px;
+   background-color: brown;
+}
+
+
