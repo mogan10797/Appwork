@@ -1,0 +1,61 @@
+.rightbox{
+    background-color:DodgerBlue;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+.article {
+    float: left;
+    padding: 10px;
+    width: 100px;
+    background-color: gainsboro;
+    height: 500px;
+    margin: 10px 32px;
+}
+.logout{
+    float:right;
+    padding:20px;
+    
+    width: 100px;
+    height: 500px;
+    background-color: gainsboro;
+}
+.abc{
+
+    padding: 10px;
+    height: 50px;
+    width: 1500px;
+    clear:both;
+    margin-top: 400px;
+    background-color:hotpink; 
+}
+.center{
+    padding: 100px
+}
+body{
+    background-color: gray;
+}
+.table{
+padding: 50px;
+margin: 5px;
+width: 100%;
+background-color: greenyellow ;
+flex-wrap: wrap
+}
+.table1{
+    padding:50px;
+    margin: 5px;
+    height: 1000px;
+    width: 200px;
+    background-color: brown;
+}
+.table2{
+   padding:50px;
+   margin: 5px;
+   height:1000px;
+   width: 200px;
+   background-color: brown;
+}
+
+

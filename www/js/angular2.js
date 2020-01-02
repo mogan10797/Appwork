@@ -38,7 +38,7 @@ function login(){
         cache: false,
         success: function(data){
             var obj = JSON.parse(data);
-            if(obj.status == "success"){
+            if(obj.status == "successloginin"){
                 localStorage.userName = id;
                 localStorage.userPasseord = passwd;
                 localStorage.loginType = 0;
@@ -68,3 +68,4 @@ cache:false,
 
     })
 }
+
