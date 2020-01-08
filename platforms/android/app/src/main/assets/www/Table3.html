@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="js/angular2.js">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -12,8 +14,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+
     <title>預約</title>
     <body>
+ <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
 </head>
 <div data-role="header" style="overflow:hidden;">
     <h1>預約</h1>
@@ -44,7 +57,7 @@
     </nav>
     
         <div id="mainContent" style="width:95%; margin:0 auto;">
-<label for ="select-native-1" class="col-3">類別:</label>
+<label for ="select-native-1" class="col-7">類別:</label>
 <select name="noteType" id="select-native-1" class="col-7">
     <option value="work">攻勢</option>
     <option value="family">家事</option>
@@ -59,7 +72,7 @@
 <textarea cols="40" rows="8" name="description" id ="textarea-1">Textarea</textarea>
     </div>
           
-    
+    <p>Date: <input type="text" id="datepicker"></p>
     <script>app.initialize();</script>
         </body>
 </html>

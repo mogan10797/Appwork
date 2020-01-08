@@ -23,9 +23,6 @@ angular
     };
 }]);
 
-
-
-
 function login(){
     var id = document.getElementById("user").value;
     var passwd = document.getElementById("passwd").value;
@@ -54,6 +51,7 @@ function login(){
         }
     });
 }
+
 function signin(){
     var id = document.createElement("user").value;
     var passwd=document.createElement("passwd").value;
@@ -68,3 +66,4 @@ cache:false,
 
     })
 }
+

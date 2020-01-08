@@ -23,9 +23,6 @@ angular
     };
 }]);
 
-
-
-
 function login(){
     var id = document.getElementById("user").value;
     var passwd = document.getElementById("passwd").value;
@@ -38,7 +35,7 @@ function login(){
         cache: false,
         success: function(data){
             var obj = JSON.parse(data);
-            if(obj.status == "successloginin"){
+            if(obj.status == "success"){
                 localStorage.userName = id;
                 localStorage.userPasseord = passwd;
                 localStorage.loginType = 0;
@@ -54,6 +51,7 @@ function login(){
         }
     });
 }
+
 function signin(){
     var id = document.createElement("user").value;
     var passwd=document.createElement("passwd").value;
